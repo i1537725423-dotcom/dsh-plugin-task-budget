@@ -1,0 +1,8 @@
+# 本轮任务花费限额（默认 5 元）：Host 半记账 + 拦截，界面是输入框下方状态栏里的开关与金额胶囊。
+# enabled / limitCny 只是「出厂默认」；用户界面上改过的值会写到同目录 state.json，优先于这里。
+- insert:
+    - id: task-budget
+      name: 'dsh-plugin-task-budget'
+      config:
+        enabled: true
+        limitCny: 5

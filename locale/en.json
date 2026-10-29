@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Task Budget",
+    "description": "A CNY spending cap per turn (¥5 by default): turn usage is priced against the DeepSeek price list, and the run stops before the next model request at the cap. The switch and amount sit at the right end of the composer dock."
+  }
+}

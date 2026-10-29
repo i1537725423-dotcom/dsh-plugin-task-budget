@@ -1,0 +1,66 @@
+{
+  "name": "dsh-plugin-task-budget",
+  "version": "0.1.0",
+  "description": "Sets a CNY spending cap for each DeepSeek Harness turn — ¥5 by default — and stops the run before the next model request once the cap is reached; the switch and amount sit at the right end of the composer dock. | 给 DeepSeek Harness 的每一轮对话设人民币花费上限（默认 5 元），到上限在下一个模型请求前自动停下；开关与金额在输入框下方最右侧。",
+  "type": "module",
+  "main": "index.js",
+  "icon": "icon.svg",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "budget",
+    "cost",
+    "spending-cap",
+    "spending-limit",
+    "cny",
+    "usage",
+    "cost-control"
+  ],
+  "license": "MIT",
+  "author": "liuzhixian",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i1537725423-dotcom/dsh-plugin-task-budget.git"
+  },
+  "homepage": "https://github.com/i1537725423-dotcom/dsh-plugin-task-budget#readme",
+  "bugs": {
+    "url": "https://github.com/i1537725423-dotcom/dsh-plugin-task-budget/issues"
+  }
+}

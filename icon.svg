@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="任务限额">
+  <defs>
+    <linearGradient id="tb-g" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4D6BFE"/>
+      <stop offset="1" stop-color="#2F4BD8"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#tb-g)"/>
+  <circle cx="32" cy="27" r="9.5" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  <path d="M27.5 22.5 32 27.5 36.5 22.5M32 27.5V34M28 29.5h8M28 32.5h8" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="18" y="41" width="28" height="6" rx="3" fill="#FFFFFF" opacity="0.92"/>
+</svg>
